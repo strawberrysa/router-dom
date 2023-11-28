@@ -33,12 +33,15 @@ export default function Product({ items }) {
             <h3>가격: {product.price}</h3>
             <h3>좋아요: {product.like}</h3>
             <h3>구매옵션</h3>
-
+            {/* 상품의 옵션을 드롭다운 메뉴로 렌더링 */}
             <select
               style={{
                 width: "100px",
               }}
             >
+              {/* product의 option 배열을 사용하여 옵션을 렌더링.
+               map 함수로 option 배열의 각 요소에 대해 반복하며 각각의 요소를 <option>요소로 만들기.
+               key 속성은 map 함수에 넣어주라 .  */}
               {product.option.map((option, index) => {
                 return <option key={index}>{option}</option>;
               })}

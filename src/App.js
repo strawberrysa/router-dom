@@ -8,6 +8,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 
 function App() {
+  //상품 데이터 배열을 items라는 변수에 할당
   const items = [
     {
       id: "1",
